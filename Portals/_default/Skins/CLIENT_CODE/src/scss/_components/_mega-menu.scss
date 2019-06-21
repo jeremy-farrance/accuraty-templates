@@ -105,6 +105,9 @@ $m--submenu-description-color:        $gray-700;
 // ========
 //
 // A `<ul>` added as an immediate child of `<li class="mega-menu__item">`.
+// This class is a sibling of Bootstrap's `.dropdown-menu`.
+//
+// 1. Reset style inherited from Bootstrap's `.dropdown-menu` class.
 // ----------------------------------------------------------------------------
 
 .mega-menu__dropdown {
@@ -122,6 +125,7 @@ $m--submenu-description-color:        $gray-700;
   background-color: $m--bg;
   background-clip: padding-box;
   visibility: hidden;
+  border: 0; // 1
   border-bottom: 1px solid $m--border-color;
   @include box-shadow($m--box-shadow);
 
