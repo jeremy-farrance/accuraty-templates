@@ -1,13 +1,14 @@
+<!--#include file="../public/icons/all.svg"-->
+
 <header class="header" role="banner">
   <nav class="navbar navbar-expand-md navbar-light" role="navigation">
     <div class="container">
       <a
         class="navbar-brand"
-        href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalSettings.HomeTabId) %>"
+        <%-- href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalSettings.HomeTabId) %>" --%>
+        href="/"
         aria-label="_xx___CLIENT_NAME___xx_"
-      >
-        <!--#include file="_logo.ascx"-->
-      </a>
+      ><!--#include file="_logo.ascx"--></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -16,6 +17,7 @@
       <div class="collapse navbar-collapse" id="navbarContent">
         <dnn:MENU
           MenuStyle="menus/NavPrimary"
+          NodeSelector=""
           IncludeNodes=""
           ExcludeNodes=""
           runat="server"
