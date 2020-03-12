@@ -1,5 +1,7 @@
 {
-  "extends": ["stylelint-config-twbs-bootstrap/scss"],
+  "extends": [
+    "stylelint-config-twbs-bootstrap/scss"
+  ],
   "defaultSeverity": "warning",
   "rules": {
     "block-no-empty": null,
@@ -11,15 +13,20 @@
     "selector-max-type": [
       4,
       {
-        "ignore": ["next-sibling"]
+        "ignore": [
+          "next-sibling"
+        ],
+        "message": "Are you sure you need that many selectors?"
       }
     ],
     "selector-no-qualifying-type": [
       true,
       {
-        "ignore": ["attribute", "class"]
+        "ignore": [
+          "attribute",
+          "class"
+        ]
       }
-    ],
-    "scss/dollar-variable-default": null
+    ]
   }
 }
